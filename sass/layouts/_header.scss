@@ -1,0 +1,64 @@
+.headerBar{
+    width: 100%;
+    height: 0.8rem;
+    background: linear-gradient(90deg, rgb(100, 91, 83) 0%, rgb(235, 82, 82) 18.23%, rgb(247, 143, 47) 34.37%, rgb(244, 193, 81) 48.96%, rgb(82, 187, 118) 66.15%, rgb(38, 165, 215) 82.29%, rgb(224, 105, 183) 100%);
+}
+
+.navbar{
+    .header__left{
+        display: flex;
+        align-items: center;
+
+        .navbar-brand{
+            flex-grow: 1;
+            img{
+                width: 100px;
+            }
+        }
+
+        .headerCategories{
+            flex-grow: 1;
+            width: 150px;
+            color: $color-gray-2;
+            font-weight: 300;
+            font-size: .9rem;
+        }
+
+        .input-group{
+            flex-grow: 6;
+            
+            @include search();
+
+            }
+        }
+    
+
+    .header__right{
+        .nav-item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .btn__login{
+                border: 1px solid black;
+                color: black;
+                opacity: .6;
+                transition: .2s;
+
+                &:hover{
+                    opacity: 1;
+                }
+            }
+
+            .btn-danger{
+                background-color: $color-red-0;
+
+                &:hover{
+                    background-color: $color-red-1;
+                }
+            }
+        }
+    }
+
+
+}

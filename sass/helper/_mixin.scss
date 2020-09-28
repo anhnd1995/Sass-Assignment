@@ -1,0 +1,38 @@
+@mixin search {
+
+        &:focus-within{
+            border: 1px solid $color-gray-2;
+
+            .fa-search{
+                background-color: #fff;
+            }
+        }
+        
+        .form-control{
+            background-color:$color-gray-1;
+            border: none;
+            
+            &::placeholder{
+                font-size: 0.7rem;
+                font-weight: 300;
+                letter-spacing: 1px;
+            }
+
+            &:focus{
+                box-shadow: none;
+                background-color: white;
+            }
+        }
+        .fa-search{
+            background-color:$color-gray-1;
+            border: none;
+            color: $color-red-0;
+            padding: 10px;
+            font-size: 14px;
+            
+            &:hover{
+                background-color: $color-red-0;
+                color: white;
+            }
+        }
+    }

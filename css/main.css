@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+  font-weight: 900;
+  padding: 8px 20px;
+}
+
+.headerBar {
+  width: 100%;
+  height: 0.8rem;
+  background: linear-gradient(90deg, #645b53 0%, #eb5252 18.23%, #f78f2f 34.37%, #f4c151 48.96%, #52bb76 66.15%, #26a5d7 82.29%, #e069b7 100%);
+}
+
+.navbar .header__left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .header__left .navbar-brand {
+  flex-grow: 1;
+}
+
+.navbar .header__left .navbar-brand img {
+  width: 100px;
+}
+
+.navbar .header__left .headerCategories {
+  flex-grow: 1;
+  width: 150px;
+  color: #a1a7b3;
+  font-weight: 300;
+  font-size: .9rem;
+}
+
+.navbar .header__left .input-group {
+  flex-grow: 6;
+}
+
+.navbar .header__left .input-group:focus-within {
+  border: 1px solid #a1a7b3;
+}
+
+.navbar .header__left .input-group:focus-within .fa-search {
+  background-color: #fff;
+}
+
+.navbar .header__left .input-group .form-control {
+  background-color: rgba(20, 23, 28, 0.05);
+  border: none;
+}
+
+.navbar .header__left .input-group .form-control::placeholder {
+  font-size: 0.7rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.navbar .header__left .input-group .form-control:focus {
+  box-shadow: none;
+  background-color: white;
+}
+
+.navbar .header__left .input-group .fa-search {
+  background-color: rgba(20, 23, 28, 0.05);
+  border: none;
+  color: #ec5252;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.navbar .header__left .input-group .fa-search:hover {
+  background-color: #ec5252;
+  color: white;
+}
+
+.navbar .header__right .nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar .header__right .nav-item .btn__login {
+  border: 1px solid black;
+  color: black;
+  opacity: .6;
+  transition: .2s;
+}
+
+.navbar .header__right .nav-item .btn__login:hover {
+  opacity: 1;
+}
+
+.navbar .header__right .nav-item .btn-danger {
+  background-color: #ec5252;
+}
+
+.navbar .header__right .nav-item .btn-danger:hover {
+  background-color: #521822;
+}
+
+.carouselUdemy {
+  background: url(../../img/cover.jpg);
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.carouselUdemy .carousel__content {
+  color: white;
+  width: 30%;
+}
+
+.carouselUdemy .carousel__content h3 {
+  font-size: 2.7em;
+  font-weight: bold;
+}
+
+.carouselUdemy .carousel__content p {
+  font-size: 1.2em;
+}
+
+.carouselUdemy .carousel__content .input-group {
+  background-color: #fff;
+  border: none;
+}
+
+.carouselUdemy .carousel__content .input-group:focus-within {
+  border: 1px solid #a1a7b3;
+}
+
+.carouselUdemy .carousel__content .input-group:focus-within .fa-search {
+  background-color: #fff;
+}
+
+.carouselUdemy .carousel__content .input-group .form-control {
+  background-color: rgba(20, 23, 28, 0.05);
+  border: none;
+}
+
+.carouselUdemy .carousel__content .input-group .form-control::placeholder {
+  font-size: 0.7rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.carouselUdemy .carousel__content .input-group .form-control:focus {
+  box-shadow: none;
+  background-color: white;
+}
+
+.carouselUdemy .carousel__content .input-group .fa-search {
+  background-color: rgba(20, 23, 28, 0.05);
+  border: none;
+  color: #ec5252;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.carouselUdemy .carousel__content .input-group .fa-search:hover {
+  background-color: #ec5252;
+  color: white;
+}
+
+.intro {
+  background: linear-gradient(to right, #6e1a52, #ec5252);
+}
+
+.intro .col-sm-4 {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: 1em;
+  padding: 10px 0;
+}
+
+.intro .col-sm-4 i {
+  font-size: 50px;
+  padding-right: 10px;
+}
+
+@media (max-width: 1280px) {
+  .intro .col-sm-4 {
+    text-align: center;
+  }
+  .intro .col-sm-4 i {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro {
+    display: none;
+  }
+}
+
+.course .course__right #courseUdemy .carousel-item .course__carousel #pointer {
+  width: 72px;
+  height: 15px;
+  top: 13%;
+  position: absolute;
+  background: #F4C150;
+  font-size: .75em;
+}
+
+.course .course__right #courseUdemy .carousel-item .course__carousel #pointer:before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid #F4C150;
+  border-top: 7px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+.course .course__right #courseUdemy .carousel-item .course__carousel img {
+  width: 100%;
+}
+
+.course .course__right #courseUdemy .carousel-item .course__carousel .course__overview {
+  font-size: 13px;
+  border: 1px solid #a1a7b3;
+  padding: 10px;
+  box-shadow: black;
+}
+
+.course .course__right #courseUdemy .carousel-item .course__carousel .course__overview h4 {
+  font-size: 15px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.course .course__right #courseUdemy .carousel-item .course__carousel .course__overview p {
+  color: #686f7a;
+}
+
+.course .course__right #courseUdemy .carousel-item .course__carousel .course__overview .fa-star {
+  color: #F4C150;
+}
+
+.course .course__right #courseUdemy .carousel-item .course__carousel .course__overview .price__old {
+  text-decoration: line-through;
+}
+
+.course .course__right #courseUdemy .carousel-item .course__carousel .course__overview .price__new {
+  font-size: 15px;
+}
+/*# sourceMappingURL=main.css.map */
