@@ -1,0 +1,30 @@
+.promo{
+    background: $color-gray-1;
+
+    .row{
+        // justify-content: space-evenly;
+    }
+
+    .promo__item{
+        background-color: #fff;
+        padding: 0 5px 0 5px;
+        display: flex;
+        height: 150px;
+
+        i{
+            font-size: $fs-4;
+            line-height: 70px;
+            padding-left: 10px;
+        }
+
+        .promo__text{
+            padding: 10px 10px 15px;
+
+            h4{
+                font-size: $fs-3;
+                font-weight: $fw-bold;
+            }
+        }
+       
+    }
+}

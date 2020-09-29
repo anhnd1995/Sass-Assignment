@@ -1,0 +1,28 @@
+
+.partner{
+    text-align: center;
+    background-color: $color-white-cream;
+
+    &__top{
+        h5{
+            font-size: $fs-1;
+        }
+    }
+
+    &__top-logo{
+        img{
+            margin: 30px;
+        }
+    }
+
+    &__right, &__left{
+        width: 50%;
+
+        h3{
+            font-weight: $fw-bold-1;
+        }
+    }
+    .right{
+        border-right: 1px solid #ddd;
+    }
+}

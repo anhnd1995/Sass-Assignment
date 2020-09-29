@@ -1,0 +1,49 @@
+footer{
+    .footer__top{
+        &-right{
+            ul{
+               margin: 40px;
+
+                li {
+                    width:33.333333%; 
+                    float:left;
+                    list-style: none;
+                    padding-bottom: 5px;
+                   
+                    
+                  }
+            }
+        }
+
+        &-left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .footer__bot{
+        margin: 20px;
+        &-left{
+            img{
+                width: 150px;
+            }
+
+            span{
+                font-size: $fs-1;
+                color: $color-gray-2;
+            }
+        }
+
+        &-right{
+            a{
+                padding-right: 10px;
+            }
+        }
+    }
+
+    .footer__bar{
+        background-color: $color-red-0;
+        height: 5px;
+    }
+}

@@ -7,3 +7,13 @@
 html, body{
     font-family: 'Roboto', sans-serif;;
 }
+
+a{
+    text-decoration: none;
+    font-size: $fs-1;
+    color: $color-blue;
+
+    &:hover{
+        color: darken($color-blue, 50%);
+    }
+}

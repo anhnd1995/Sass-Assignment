@@ -1,62 +1,19 @@
 .course{
-    .course__left{}
+    .course__left{
+        background-color: $color-gray-1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        h4{
+            font-weight: $fw-bold-0;
+            font-size: $fs-2;
+        }
+    }
 
     .course__right{
         #courseUdemy{
-            .carousel-item {
-                .course__carousel{
-                    
-                    #pointer {
-                        width: 72px;
-                        height: 15px;
-                        top: 13%;
-                        position: absolute;
-                        background: $color-yellow;
-                        font-size: .75em;
-                        }
-                        
-                        #pointer:before {
-                        content: "";
-                        position: absolute;
-                        right: -20px;
-                        bottom: 0;
-                        width: 0;
-                        height: 0;
-                        border-left: 20px solid #F4C150;
-                        border-top: 7px solid transparent;
-                        border-bottom: 8px solid transparent;
-                        }
-                    
-                    img{
-                        width: 100%;
-                    }
-
-                    .course__overview{
-                        font-size: $fs-1;
-                        border: 1px solid $color-gray-2;
-                        padding: 10px;
-                        box-shadow: black;
-                        h4{
-                            font-size: $fs-0;
-                            font-weight: $fw-bold-1;
-                            padding-top: $pd-1;
-                        }
-                        p{
-                            color: $color-gray-4;
-                        }
-                        .fa-star{
-                            color: $color-yellow;
-                        }
-                        .price__old{
-                            text-decoration: line-through;
-                        }
-                        .price__new{
-                            font-size: $fs-0;
-                        }
-                    }
-                }
-
-            }
+            @include course();
         }
     }
 }

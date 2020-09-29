@@ -36,3 +36,104 @@
             }
         }
     }
+
+
+@mixin course{
+    .carousel-item {
+        .course__carousel{
+            
+            #pointer {
+                width: 72px;
+                height: 15px;
+                top: 13%;
+                position: absolute;
+                background: $color-yellow;
+                font-size: .75em;
+                box-shadow: 0 1px $color-gray-1;
+                }
+                
+                #pointer:before {
+                content: "";
+                position: absolute;
+                right: -20px;
+                bottom: 0;
+                width: 0;
+                height: 0;
+                border-left: 20px solid #F4C150;
+                border-top: 7px solid transparent;
+                border-bottom: 8px solid transparent;
+                
+                }
+            
+            img{
+                width: 100%;
+            }
+
+            .course__overview{
+                font-size: $fs-1;
+                border: 1px solid $color-gray-1;
+                padding: 10px;
+                box-shadow: 0 5px $color-gray-1;
+                h4{
+                    font-size: $fs-0;
+                    font-weight: $fw-bold-1;
+                    padding-top: $pd-1;
+                }
+                p{
+                    color: $color-gray-4;
+                }
+                .fa-star{
+                    color: $color-yellow;
+                }
+                .price__old{
+                    text-decoration: line-through;
+                }
+                .price__new{
+                    font-size: $fs-0;
+                }
+            }
+        }
+
+    }
+
+    .carousel-control-prev, .carousel-control-next{
+        opacity: 1;
+        position: absolute;
+        top: -61px;
+    }
+
+    .carousel-control-prev{
+        left: -66px;
+    }
+
+    .carousel-control-next{
+        right: -66px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        height: 50px;
+        width: 50px;
+        outline: black;
+        
+        border-radius: 50%;
+        border: 1px solid $color-gray-1;
+        background-color: #fff;
+        opacity: 1;
+
+    }
+
+    .carousel-control-next-icon:after{
+        content: '>';
+        font-size: 30px;
+        color: $color-blue;
+        opacity: 1;
+    }
+
+    .carousel-control-prev-icon:after {
+        content: '<';
+        font-size: 30px;
+        color: $color-blue;
+        opacity: 1;
+    }
+}

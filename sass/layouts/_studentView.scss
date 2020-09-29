@@ -1,0 +1,12 @@
+.studentView{
+    .carousel-inner{
+        width: 95%;
+        margin: 0 auto;
+
+        
+    }
+
+    #courseStudent{
+        @include course();
+    }
+}

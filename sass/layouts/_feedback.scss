@@ -1,0 +1,48 @@
+.feedback{
+    background-color: $color-white-cream;
+    @include course();
+
+    &__bg{
+    width: 80%;
+    margin: 0 auto;
+    }
+
+    &__item{
+        border: 1px solid #ddd;
+        padding: 15px;
+        border-radius: 2px;
+        box-shadow: 0 1px 3px 0 rgba(20,23,28,.15);
+        background-color: #fff;
+        height: 250px;
+
+    }
+
+    &__student{
+        img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 20px;
+        }
+
+        span{
+            font-weight: $fw-bold-0;
+        }
+    }
+
+    &__content{}
+
+    .carousel-control-prev{
+        left: -95px;
+        top: -10px;
+    }
+    
+
+    .carousel-control-next{
+        right: -90px;
+        top: -10px;
+    }
+    
+
+    
+}
